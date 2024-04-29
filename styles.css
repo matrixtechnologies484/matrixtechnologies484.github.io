@@ -2,7 +2,7 @@
 .topnav {
   background-color: #000;
   overflow: hidden;
-  font-family: "ITC Kabel Std Book";
+  font-family: ITC Kabel Std Book;
 }
 
 /* Style the links inside the navigation bar */
@@ -28,6 +28,6 @@
 }
 
 body {
-    font-family: ITC Kabel Std;
+    font-family: ITC Kabel Std Book;
     font: bold;
 }
