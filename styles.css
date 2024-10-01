@@ -1,33 +1,87 @@
 /* Add a black background color to the top navigation */
-.topnav {
-  background-color: #000;
-  overflow: hidden;
-  font-family: ITC Kabel Std Book;
+:root
+{
+	--yy: 10%;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+img.main
+{
+    position: fixed;
+    top: 17.5vh;
+	left: 2vw;
+}
+div.scroll {
+    margin: 4px, 4px;
+    padding: 37.5px 5px 5px 37.5px;
+    background-color: #DEE3EB;
+    width: auto;
+    height: 85vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 50px 0px 0px 0px;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    text-align: justify;
+    box-shadow: inset 4px 4px 52.3px 5px hsla(228,16%,64%,0.25);
+        }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll::-webkit-scrollbar {
+  display: none;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #888;
-  color: black;
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+
+li.nav1{
+    display: inline;
+    float: left;
+    border-right: 1px solid transparent;
+    border-image: linear-gradient(to bottom, white,#A6A9B0,white,white);
+    border-image-slice: 1;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+li.nav1:last-child
+{
+	border-right: none;
+}
+
+
+a.nav2
+{
+    display: block;
+    padding: 8px;
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    color: #A6A9B0;
+    font-size: x-large;
+}
+ul.navmain
+{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 0;
+    margin-left: 25vw;
+    margin-bottom: 0;
+    padding: 0;
+	top: 2vw;
+    overflow: hidden;
+    position: fixed;
 }
 
 body {
     font-family: ITC Kabel Std Book;
-    font: bold;
+    font-weight: 500;
+    color: rgba(20,21,23,1.00);
+    font-size: large;
 }
