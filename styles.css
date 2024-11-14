@@ -98,3 +98,48 @@ body {
     color: rgba(20,21,23,1.00);
     font-size: large;
 }
+
+@media screen and (max-device-aspect-ratio: 0.95/1)
+{
+	  div.logo {
+	    display: none;
+	  }
+
+	div.scroll 
+	{
+	    margin-top: 75px;
+		margin-left: -10px;
+	    margin-bottom: 4px;
+	    padding-top: 37.5px;
+	    padding-right: 37.5px;
+	    padding-left: 37.5px;
+	    padding-bottom: 5px;
+	    background-color: #DEE3EB;
+	    overflow-x: hidden;
+	    overflow-y: scroll;
+	    border-radius: 50px 50px 0px 0px;
+	    position: fixed;
+	    width: auto;
+	    height: calc(100% - (75px + 37.5px));
+	    text-align: justify;
+	    box-shadow: inset 4px 4px 52.3px 5px hsla(228,16%,64%,0.25);
+	    flex-grow: 8;
+	    margin-right: auto;
+	    word-wrap: break-word;
+	 }
+	
+	ul.navmain
+	{
+	    list-style-type: none;
+	    margin-top: 10px;
+	    margin-right: 0;
+	    margin-left: 20vw;
+	    margin-bottom: 0;
+	    padding: 0;
+		top: 2vw;
+	    overflow: hidden;
+	    position: fixed;
+		text-align:center;
+		align-content:center;
+	}
+}
