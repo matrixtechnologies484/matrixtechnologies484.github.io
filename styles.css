@@ -126,6 +126,7 @@ ul.navmain
 .card:hover:active
 {
 	background:linear-gradient(to bottom,#DEE3EB,#8CA3C9);
+	color: white;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
