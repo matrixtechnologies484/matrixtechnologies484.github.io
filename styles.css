@@ -12,14 +12,14 @@ div.logo
 {
 	position: fixed;
 	float: left;
-    top: 17.5vh;
+    	top: 17.5vh;
 	left: 2vw;
 	flex-grow: 1;
 }
 
 div.scroll {
     margin-top: 75px;
-    margin-left: 10vw;
+    margin-left: 125px;
     margin-bottom: 4px;
     padding-top: 37.5px;
     padding-right: 37.5px;
@@ -84,7 +84,7 @@ ul.navmain
     list-style-type: none;
     margin-top: 10px;
     margin-right: 0;
-    margin-left: 25vw;
+    margin-left: 125px;
     margin-bottom: 0;
     padding: 0;
 	top: 2vw;
