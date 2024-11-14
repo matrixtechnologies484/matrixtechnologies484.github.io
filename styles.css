@@ -30,7 +30,7 @@ div.scroll {
     overflow-y: scroll;
     border-radius: 50px 0px 0px 0px;
     position: fixed;
-    width: auto;
+    width: calc(100% - (125px + 75px));
     height: calc(100% - (75px + 37.5px));
     text-align: justify;
     box-shadow: inset 4px 4px 52.3px 5px hsla(228,16%,64%,0.25);
@@ -119,7 +119,7 @@ body {
 	    overflow-y: scroll;
 	    border-radius: 50px 50px 0px 0px;
 	    position: fixed;
-	    width: auto;
+	    width: calc((100% + 10px) - 75px);
 	    height: calc(100% - (75px + 37.5px));
 	    text-align: justify;
 	    box-shadow: inset 4px 4px 52.3px 5px hsla(228,16%,64%,0.25);
@@ -131,15 +131,31 @@ body {
 	ul.navmain
 	{
 	    list-style-type: none;
-	    margin-top: 10px;
+		float: none;
+		position: absolute;
 	    margin-right: 0;
-	    margin-left: 20vw;
+	    margin-left: 50%;
 	    margin-bottom: 0;
+		margin-top: 30px;
 	    padding: 0;
-		top: 2vw;
+		transform: translateX(-50%);
+		width: 100%;
 	    overflow: hidden;
-	    position: fixed;
 		text-align:center;
 		align-content:center;
 	}
+	div.logo_hor
+	{
+		display: block;
+		margin-left: calc(50% - (260px / 2));
+		margin-right: auto;
+		width: 50%
+	  }
+}
+
+@media screen and (min-device-aspect-ratio: 0.95/1)
+{
+	div.logo_hor {
+	    display: none;
+	  }
 }
