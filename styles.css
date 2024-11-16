@@ -1,7 +1,7 @@
 /* Add a black background color to the top navigation */
 :root
 {
-	--yy: 10%;
+	--yy: 0%;
 }
 
 .flex-container {
@@ -15,6 +15,11 @@ div.logo
     top: 17.5vh;
 	left: 2vw;
 	flex-grow: 1;
+	background: black;
+	-webkit-mask-image: url(matrix_title_logo.png);
+	mask-image: url(matrix_title_logo.png);
+	mask-size: 64px 521px;
+	mask-repeat: no-repeat;
 }
 
 div.scroll {
@@ -198,8 +203,18 @@ body {
 		display: block;
 		margin-left: calc(50% - (260px / 2));
 		margin-right: auto;
-		width: 50%
-	  }
+		width: 50%;
+		background: black;
+		-webkit-mask-image: url(matrix_title_logo_hor.png);
+		mask-image: url(matrix_title_logo_hor.png);
+		mask-size: 260px 32px;
+		mask-repeat: no-repeat;
+	 }
+	
+	img.scrollimg
+	{
+	  mask-image: linear-gradient(to right, black calc((var(--yy) * 2) - 100%), transparent calc(var(--yy) * 2));
+	}
 }
 
 @media only screen and (min-device-aspect-ratio: 0.95/1)
@@ -207,4 +222,11 @@ body {
 	div.logo_hor {
 	    display: none;
 	  }
+	
+	img.scrollimg
+	{
+	  mask-image: linear-gradient(to bottom, black calc((var(--yy) * 2) - 100%), transparent calc(var(--yy) * 2));
+	}
+
+	
 }

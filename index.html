@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Welcome!</title>
 <link href="https://db.onlinewebfonts.com/c/cbdca5f983f8cea84510801d4d61bac4?family=ITC+Kabel+Std+Book" rel="stylesheet">
 <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
 	
-		
 </head>
 
 <body>
@@ -21,14 +21,15 @@
 <div class = "flex-container">	
 	
 	<div class = "logo">
-		<img src="matrix_title_logo.png" alt="matrix" width="64" height="521" class="main"/>
+		<img src="matrix_title_logo_alt.png" alt="matrix" width="64" height="521" class="scrollimg"/>
+		
 	</div>
 
 	<div class = "logo_hor">
-		<img src="matrix_title_logo_hor.png" alt="matrix" width="260" height="32" class="main"/>
+		<img src="matrix_title_logo_hor_alt.png" alt="matrix" width="260" height="32" class="scrollimg"/>
 	</div>
 	
-	<div class="scroll">
+	<div class="scroll" id = "page" onscroll="bar_check()">
 	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus lorem, finibus id turpis ut, mollis iaculis est. Nulla elementum lacinia orci, vel sodales orci. Maecenas in risus accumsan, convallis tellus vel, sodales magna. Nulla suscipit metus eros, in efficitur orci vehicula id. Aliquam tristique tincidunt interdum. In ut semper metus. Phasellus nibh odio, tempus sed leo at, scelerisque fermentum turpis. Quisque accumsan orci at fringilla scelerisque. Sed at leo vitae arcu imperdiet tempor. Nulla venenatis sodales convallis. Cras at ex id est mollis cursus in et ex. Vivamus venenatis dictum egestas. Cras gravida tincidunt odio. Integer sit amet convallis diam, sed laoreet sapien. Donec arcu ex, aliquet vel consectetur a, suscipit ac mi.</p>
 
 	<p>Nam ex est, interdum in nulla in, dapibus accumsan nisi. Cras volutpat sem vitae quam vulputate congue sed ut mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis auctor sed turpis id eleifend. In dapibus, elit eu ultrices pretium, arcu quam dapibus nibh, non cursus lorem elit sed turpis. Integer ut imperdiet mauris, quis vehicula massa. Nulla facilisi. Ut in condimentum augue, nec malesuada velit. Pellentesque posuere est non ante sodales, eu vestibulum dui varius. Sed rhoncus enim vel lectus tincidunt, sed scelerisque justo commodo. Nunc congue quis sem eget elementum. Quisque sit amet semper augue. Sed eget ex quis magna lacinia auctor. Praesent consequat maximus arcu. Donec egestas nibh id congue vestibulum. Nunc quis euismod nisl, a maximus magna.</p>
@@ -60,7 +61,10 @@
 	<p>Nullam sagittis mi nulla, id consectetur enim bibendum sit amet. Sed at pretium purus. Nam nisl nunc, feugiat quis lorem a, lobortis ultrices dui. Etiam porta libero non maximus iaculis. Donec posuere bibendum placerat. Curabitur dignissim, quam vestibulum aliquet iaculis, sapien turpis dignissim odio, tincidunt iaculis nisl velit et dui. Maecenas posuere ipsum neque, consequat iaculis mauris rhoncus viverra. Vestibulum sed libero vel diam dapibus ultrices ut nec augue. Nunc sed pharetra dui, quis scelerisque arcu. Mauris rutrum enim quis odio pellentesque, non cursus sem pulvinar. Curabitur erat dui, sollicitudin quis eros vel, facilisis mattis dolor. Quisque quis nulla nulla. Quisque posuere enim et dui hendrerit posuere. Sed maximus ex orci, quis consectetur tellus imperdiet nec. Sed rutrum, odio vel pretium consequat, lacus felis luctus nisi, eu dignissim libero est eu est.</p>
 		<p>This page is under progress and it will be opened once if I finish this.</p>
 	  </div>
-</div>
+</div>		
+	
+<script src ="scrollaction.js"></script>
+	
 </body>
 
 </html>

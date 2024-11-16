@@ -18,20 +18,24 @@
 <div class = "flex-container">
 	
 	<div class = "logo">
-		<img src="matrix_title_logo.png" alt="matrix" width="64" height="521" class="main"/>
+		<img src="matrix_title_logo_alt.png" alt="matrix" width="64" height="521" class="scrollimg"/>
+		
 	</div>
-	
+
 	<div class = "logo_hor">
-		<img src="matrix_title_logo_hor.png" alt="matrix" width="260" height="32" class="main"/>
+		<img src="matrix_title_logo_hor_alt.png" alt="matrix" width="260" height="32" class="scrollimg"/>
 	</div>
 	
-	<div class="scroll">
+	<div class="scroll" id = "page" onscroll="bar_check()">
 		<p align = "center">
 			<h1>Error</h1><br>
 			The page you're looking for is non-existent.
 		</p>
 	</div>
 		
-</div>	
+</div>
+	
+<script src ="scrollaction.js"></script>
+	
   </body>
 </html>
