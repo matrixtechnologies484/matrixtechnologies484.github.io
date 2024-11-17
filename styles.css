@@ -120,18 +120,18 @@ ul.navmain
   transition: 0.3s;
   width: 315px;
   border-radius: 20px;
-  background: linear-gradient(to bottom,#f0f2f5,#DEE3EB);	
+  background: linear-gradient(to bottom,#f0f2f5 75%,#DEE3EB 97.5%);	
 }
 
 .card:hover
 {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-	background: linear-gradient(to bottom,#F0F4FB,#f0f2f5);
+	background: linear-gradient(to bottom,#F0F4FB 75%,#f0f2f5 97.5%);
 }
 
 .card:hover:active
 {
-	background:linear-gradient(to bottom,#DEE3EB,#8CA3C9);
+	background:linear-gradient(to bottom,#DEE3EB 50%,#8CA3C9 97.5%);
 	color: white;
 }
 
