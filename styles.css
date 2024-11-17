@@ -2,6 +2,7 @@
 :root
 {
 	--yy: 0%;
+	--ys: 0px;
 }
 
 .flex-container {
@@ -161,7 +162,7 @@ body {
 
 	div.scroll 
 	{
-	    margin-top: 75px;
+	    margin-top: calc(75px + var(--ys));
 		margin-left: -10px;
 	    margin-bottom: 4px;
 	    padding-top: 37.5px;
@@ -174,7 +175,7 @@ body {
 	    border-radius: 50px 50px 0px 0px;
 	    position: fixed;
 	    width: calc((100% + 10px) - 75px);
-	    height: calc(100% - (75px + 37.5px));
+	    height: calc(100% - (75px + 37.5px - var(--ys)));
 	    text-align: justify;
 	    box-shadow: inset 4px 4px 52.3px 5px hsla(228,16%,64%,0.25);
 	    flex-grow: 8;
@@ -203,7 +204,7 @@ body {
 		display: block;
 		margin-left: calc(50% - (260px / 2));
 		margin-right: auto;
-		width: 50%;
+		width: 100%;
 		background: black;
 		-webkit-mask-image: url(matrix_title_logo_hor.png);
 		mask-image: url(matrix_title_logo_hor.png);
