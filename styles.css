@@ -151,6 +151,8 @@ body {
     font-weight: 500;
     color: rgba(20,21,23,1.00);
     font-size: large;
+	opacity: 0;
+   	transition: opacity .5s;
 }
 
 

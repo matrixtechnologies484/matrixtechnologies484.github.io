@@ -11,6 +11,17 @@ function get_height()
 	r.style.setProperty('--ys',(uh.offsetHeight - 51)+"px");
 }
 
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
 function bar_check()
 {
   var r = document.querySelector(':root');
