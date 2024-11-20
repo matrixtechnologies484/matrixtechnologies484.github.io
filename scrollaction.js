@@ -19,7 +19,11 @@ window.transitionToPage = function(href) {
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
-    document.querySelector('body').style.opacity = 1
+    
+	   setTimeout(function() { 
+        document.querySelector('body').style.opacity = 1
+    }, 300)
+	
 })
 function bar_check()
 {
