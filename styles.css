@@ -80,15 +80,36 @@ a.nav2
     text-align: center;
     padding-right: 16px;
     padding-left: 16px;
-    padding-bottom: 14px;
+    padding-bottom: 5px;
+	padding-top: 5px;
     text-decoration: none;
     color: #A6A9B0;
     font-size: x-large;
+	background: rgba(255,255,255,0);
+	border-radius: 15px;
+	transition: 0.3s;
+}
+a.nav_inactive
+{
+	display: block;
+    padding: 8px;
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 5px;
+	padding-top: 5px;
+    text-decoration: none;
+    color: #2A313E;
+    font-size: x-large;
+}
+a.nav2:hover
+{
+    background: rgba(244,246,255,249);
 }
 ul.navmain
 {
     list-style-type: none;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 0;
     margin-left: 125px;
     margin-bottom: 0;
@@ -179,6 +200,23 @@ body {
     font-size: large;
 	opacity: 0;
    	transition: opacity .5s;
+	caret-color: transparent;
+}
+
+.note
+{
+	color: #5E7EB0;
+	
+}
+
+.note:hover
+{
+    color: #ACCCFD;
+}
+
+.important
+{
+	color: red;
 }
 
 
