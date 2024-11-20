@@ -19,9 +19,8 @@ window.transitionToPage = function(href) {
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
-	document.querySelector('body').style.opacity = 1;
+    document.querySelector('body').style.opacity = 1
 })
-
 function bar_check()
 {
   var r = document.querySelector(':root');
