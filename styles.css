@@ -58,13 +58,14 @@ div.scroll {
 
 
 li.nav1{
-    display: inline;
+    display: block;
     float: left;
     border-right: 1px solid transparent;
     border-image: linear-gradient(to bottom, white,#A6A9B0,white,white);
     border-image-slice: 1;
     padding-left: 25px;
     padding-right: 25px;
+	white-space: nowrap;
 }
 
 li.nav1:last-child
@@ -88,6 +89,7 @@ a.nav2
 	background: rgba(255,255,255,0);
 	border-radius: 15px;
 	transition: 0.3s;
+	white-space: nowrap;
 }
 a.nav_inactive
 {
@@ -127,8 +129,7 @@ ul.navmain
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill,
-              minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 5px;
   padding: 5px;
   grid-row-gap: 100px;
@@ -246,7 +247,7 @@ body {
 
 	div.scroll 
 	{
-	    margin-top: calc(75px + var(--ys));
+	    margin-top: 75px;
 		margin-left: -10px;
 	    margin-bottom: 4px;
 	    padding-top: 37.5px;
@@ -259,7 +260,7 @@ body {
 	    border-radius: 50px 50px 0px 0px;
 	    position: fixed;
 	    width: calc((100% + 10px) - 75px);
-	    height: calc(100% - (75px + 37.5px + var(--ys) + 5px));
+	    height: calc(100% - (75px + 37.5px + 5px));
 	    text-align: justify;
 	    box-shadow: inset 4px 4px 52.3px 5px hsla(228,16%,64%,0.25);
 	    flex-grow: 8;
@@ -270,18 +271,16 @@ body {
 	ul.navmain
 	{
     list-style-type: none;
-    float: none;
     position: absolute;
+	overflow-x: scroll;
+	white-space: nowrap;
     margin-right: 0;
-    margin-left: 50%;
+    margin-left: 0%;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 25px;
     padding: 0;
-    transform: translateX(-50%);
-    overflow: hidden;
-    text-align: center;
-    align-content: center;
-    width: 100vw;
+	width: calc(250% - 50px - (0.2 * 100vw) );
+	height: 2.5em;
 	}
 	div.logo_hor
 	{
@@ -294,6 +293,7 @@ body {
 		mask-image: url(matrix_title_logo_hor.png);
 		mask-size: 260px 32px;
 		mask-repeat: no-repeat;
+		position: fixed;
 	 }
 	
 	img.scrollimg
